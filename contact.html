@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <div class="homepage-bg">
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="men.html">MEN</a></li>
+                    <li><a href="women.html">WOMEN</a></li>
+                    <li><a href="kids.html">KIDS</a></li>
+                </ul>
+            </nav>
+            <a class="logo" href="index.html">RCAF APPAREL</a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="Comps_homepage"><h1 class="text_homepage">CONTACT US</h1>
+        <p class="para_homepage"><a href="index.html" class="span_homepage2">Home</a> > <span class="span_homepage">Contact Us</span></p></div>
+   </div>
+        <br>
+
+        <div class="homepage_content">
+            <div class="left_column">
+                <div class="contact_div info">
+                    <h2>Contact Information</h2>
+                    <br>
+                    <div class="contact_row">
+                        <div class="contact_column">
+                            <p><i class="fa fa-phone"></i> Phone</p>
+                            <p>+63 934 567 890</p>
+                            <p>+63 934 567 890</p>
+                        </div>
+                        <div class="contact_column">
+                            <p><i class="fas fa-envelope-open"></i> E - mail</p>
+                            <p>email@example.com</p>
+                            <p>email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact_row">
+                        <div class="contact_column">
+                            <p><i class="fas fa-map"></i> Address</p>
+                            <p>1234 Street Name</p>
+                            <p>City, State, ZIP</p>
+                        </div>
+                        <div class="contact_column">
+                            <p><i class="fas fa-link"></i> Connect</p>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="contact_div display_picture">
+                
+                </div>
+            </div>
+        
+            <div class="right_column">
+                <h2>Send us a Message</h2>
+                <br>
+                <form action="">
+                    <div class="name_row">
+                        <div class="name_column">
+                            <label>First Name</label><br>
+                            <input type="text" placeholder="Pedro"><br>
+                        </div>
+                        <div class="name_column">
+                            <label>Last Name</label><br>
+                            <input type="text" placeholder="Penduko"><br>
+                        </div>
+                    </div>
+                    <label>E-mail</label><br>
+                    <input type="text" placeholder="example@gmail.com"><br>
+                    <label>Message</label><br>
+                    <textarea placeholder="message"> </textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="discount">
+            <p>Sign up to our newsletter<br>& get 20% off</p>
+            <a href="signup.html"><button class="btn_discount">SIGN UP FOR FREE</button></a>
+        </div>
+        
+        <footer>
+            <div class="footer_container">
+                <h2 class="footer_title">ABOUT US</h2>
+                <p class="footer_p">Your trusted Fashion<br>Company</p>
+            </div>
+            <div class="sec quicklinks">
+                <h2 class="footer_title">NAVIGATION</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2 class="footer_title">CATEGORIES</h2>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="copyrightText">
+            <p>All Rights Reserved By Ramon Christopher Fuerte </p>
+        </div>
+        
+
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <script>
+    $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }else{
+                $("header").removeClass("black")
+            }
+    });
+
+    const tabs=document.querySelectorAll('.tab_btn');
+    const all_content=document.querySelectorAll('.tab_content');
+
+    tabs.forEach((tab, index)=>{
+        tab.addEventListener('click',(e)=>{
+            tabs.forEach(tab=>{tab.classList.remove('active')});
+            tab.classList.add('active');
+
+            all_content.forEach(content=>{content.classList.remove('active')});
+            all_content[index].classList.add('active');
+        })
+
+    })
+   
+   </script>
+</body>
+</html>

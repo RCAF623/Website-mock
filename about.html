@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <div class="homepage-bg">
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="men.html">MEN</a></li>
+                    <li><a href="women.html">WOMEN</a></li>
+                    <li><a href="kids.html">KIDS</a></li>
+                </ul>
+            </nav>
+            <a class="logo" href="index.html">RCAF APPAREL</a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="Comps_homepage"><h1 class="text_homepage">ABOUT US</h1>
+        <p class="para_homepage"><a href="index.html" class="span_homepage2">Home</a> > <span class="span_homepage">About Us</span></p></div>
+   </div>
+        <br>
+
+        <div class="homepage_content">
+            <div class="about_div">
+                <h1>Meet our stylish team passionate about fashionand trends</h1>
+                <p>At RCAF APPAREL, we believe in the power of teamwork to create exceptional<br>fashion experiences our shared values and dedication to shaping the fashion<br>industry set us apart</p>
+            </div>
+            <div class="about_div_team"> 
+                <h1>Our teams</h1>
+                <div class="card-container">
+                  <div class="card">
+                    <img src="img/aboutCollection.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                      <h2>Collection</h2>
+                      <h4>Innovative Design</h4>
+                      <p>Our collection team brings fashion ideas to<br>
+                        life, creating products that elevate style, drive<br>
+                        trends, and inspire the fashion world</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/aboutCreation.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                      <h2>Creation</h2>
+                      <h4>Shaping the fashion future</h4>
+                      <p>Our creation team leads the way in fashion<br>
+                        innovation. Join a community of creators<br>
+                        always seeking new trends and pushing the<br>
+                        boundaries of fashion possibilities</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="img/aboutPromotion.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                      <h2>Promotion</h2>
+                      <h4>Enhancing Style</h4>
+                      <p>Our Promotions Team tells the story of our<br>
+                        brand. We amplify the style impact of our<br>
+                        collection, connecting our vision to fashion<br>
+                        enthusiasts worldwide</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <hr>
+            <div class="about_div_culture">
+                <h1>Culture at RCAF APPAREL</h1>
+                <p>RCAF APPAREL's culture is morethan ust style; it's a lifestyle. we are united by a passion for<br>
+                fashion and a commitment to shaping the industry. our culture values creativity, trust, and the<br>
+                belief that each team member contributes to our journey of fashion excellence. we foster<br>
+                creativity, reward initiative, and embrace diversity as we believe these are the keys to fashion<br>
+                evolution.</p>
+                
+                <div class="culture_img_div">
+                    <img src="img/culture1.jpg" alt="Avatar">
+                    <img src="img/culture2.jpg" alt="Avatar">
+                </div> 
+            </div>
+        </div>
+
+        <br>
+
+        <div class="discount">
+            <p>Sign up to our newsletter<br>& get 20% off</p>
+            <a href="signup.html"><button class="btn_discount">SIGN UP FOR FREE</button></a>
+        </div>
+        
+        <footer>
+            <div class="footer_container">
+                <h2 class="footer_title">ABOUT US</h2>
+                <p class="footer_p">Your trusted Fashion Company</p>
+            </div>
+            <div class="sec quicklinks">
+                <h2 class="footer_title">NAVIGATION</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2 class="footer_title">CATEGORIES</h2>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="copyrightText">
+            <p>All Rights Reserved By Ramon Christopher Fuerte </p>
+        </div>
+        
+
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <script>
+    $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }else{
+                $("header").removeClass("black")
+            }
+    });
+
+    const tabs=document.querySelectorAll('.tab_btn');
+    const all_content=document.querySelectorAll('.tab_content');
+
+    tabs.forEach((tab, index)=>{
+        tab.addEventListener('click',(e)=>{
+            tabs.forEach(tab=>{tab.classList.remove('active')});
+            tab.classList.add('active');
+
+            all_content.forEach(content=>{content.classList.remove('active')});
+            all_content[index].classList.add('active');
+        })
+
+    })
+   
+   </script>
+</body>
+</html>
